@@ -139,7 +139,7 @@ then
   }
 elif which yum 2>/dev/null
 then
-  yum -y install openvpn zip || {
+  yum -q -y install openvpn zip || {
     echo "============================================================"
     echo "Could not install openvpn and zip with yum." 
     echo "Enable EPEL repository?"
